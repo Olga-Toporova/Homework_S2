@@ -5,4 +5,11 @@
 
 Console.Write("Введите трехзначное число: ");
 string number = Console.ReadLine();
-Console.WriteLine("Вторая цифра числа: " + number[1]);
+if(number.Length == 3)
+{
+    Console.WriteLine("Вторая цифра числа: " + number[1]);
+}
+else
+{
+    Console.WriteLine("Введено не трехзначное число");
+}
